@@ -7,13 +7,13 @@ if you make changes in your local reposity that you want to push to the remote w
 
 
 ```
-	git push --force origin master
+git push --force origin master
 ```
 
 **Additionally, if you want to push all branches, then run this:**
 
 ```
-	git push --all origin
+git push --all origin
 ```
 
 *This concludes the current prototyping. As you can observe, this repository has two branches and several commits on each branch, some of which are the result of splitting commits. Obviously, you don't typically want to make these changes if you've already pushed it to a remote that others are also working on.*
