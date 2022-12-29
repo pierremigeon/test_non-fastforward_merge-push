@@ -1,6 +1,6 @@
 
 # Experimental repository: Personal exercises, testing git procedures prior to applying them elsewhere, and notes for future reference
-*In application, I am performing these steps for my ft_printf project repository. The exercise will allow me to practice more intermediate level git usage and promote my use of git version control best practice*
+*In application, I am performing these steps for my ft_printf project repository. This exercise will allow me to practice more intermediate level git usage and promote my use of git version control best practice*
 
 ## Branching and commit history modification after the fact
 I wanted to split the current branch into two tips and also split an earlier commit into two commits.
@@ -11,7 +11,7 @@ In order to split a branch into two tips, you create a new branch, and remove fr
 git branch new_branch_name
 git rebase -i HEAD~2 #add d for drop before the commit that you want to remove 
 ```
-You have now removed the most recent commit(s) from the main branch, while the branch 'new_branch_name' contains these commit(s)
+You have now removed the most recent commit(s) from the main branch, while the branch 'new_branch_name' contains the commit(s)
 
 ### Spliting commits:
 
@@ -49,4 +49,18 @@ git push --force origin master
 git push --all origin
 ```
 *Typically, you do not want to make these sorts of changes when it would create different version histories, for example when you've already pushed to a shared remote. Since I am not collaborating with anyone, I felt justified in modifying my commit history.* 
+
+## Sandbox repository II: working with multiple remotes.
+
+I am tired of not receiving green boxes when I am routinely making commits to my repositories! I am not receiving green boxes because I am making updates to a forked repository. For instance, my ft_printf project, I forked from my previous github account. I was using the old account for a couple of years, but then I lost my laptop and phone when I was robbed and lost access to my gmail and subsequently to all of my accounts. Enough digressions, however. My current exercise is to create a process by which a commit can be made to a non-forked repository on my current account each time a commit is made to the forked repository, ideally with the up-to-date commit history for the projct which has been updated. Standby as the idea percolates...
+
+![percolation in progress...](https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/intro-1645231221.webp)
+
+
+
+ 
+
+
+
+
 
