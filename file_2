@@ -1,4 +1,5 @@
 I'm testing hooks to see if the log will be deposited in the other directory
 first failed- seems that ./.git/hooks scripts are executed with cwd of the parent directory
 second failed to capture the most recent commit- trying post-commit script
-third test was successful. Now testing to see that commiting here updates commit_tracker and pushes 
+third test was successful. Now testing to see that commiting here updates commit_tracker and pushes
+second test 
