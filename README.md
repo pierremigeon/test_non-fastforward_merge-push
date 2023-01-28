@@ -59,11 +59,11 @@ I am tired of not receiving green boxes when I am routinely making commits to my
 **Update 1/27/23:**
 Using multiple remotes for each repository was, well, a silly idea in hindsight. It probably would have worked, but would have been more complicated than using git hooks, which is what I did end up doing.
 
-'''
+```
 mv ./.git/hooks/post-commit.sample ./.git/hooks/post-commit
 vi ./.git/hooks/post-commit
 # ...specify some commands to copy info into secondary repo...voila 
-'''
+```
 
 Git hooks are scripts that can be executed after an action is performed. For example, here the script which is executed after a commit is made in the repository is edited. The ".sample" suffix must be removed before the script is active. 
 
